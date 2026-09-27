@@ -1,0 +1,242 @@
+{
+  "doc_id": "sample_sc_judgment_001",
+  "input_chars": 8647,
+  "input_approx_tokens": 1378,
+  "num_chunks_extracted": 5,
+  "generation": {
+    "summary": "The Supreme Court of India, in Civil Appeal No. 5765 of 2019, heard the appeal filed by M/s. Kiran Constructions Pvt. Ltd. against the State of Maharashtra and others. The appeal arose from a judgment dated 12th September, 2018, by the High Court of Judicature at Bombay, which dismissed the appellant's writ petition challenging the acquisition of land bearing Survey No. 145/2. The appellant, a private limited company engaged in construction and real estate development, is the owner of 5 acres and 20 guntas of land situated in Village Khed, Taluka Mulshi, District Pune. The Government of Maharashtra issued a notification under Section 11(1) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013, on 22nd August, 2015, for the acquisition of the subject land for a bypass road. The appellant filed objections under Section 15 of the Act of 2013, arguing that the acquisition was not for a public purpose, alternative land was available, the Social Impact Assessment (SIA) study was non-compliant, and the compensation was inadequate.",
+    "grounded_sentences": [
+      {
+        "sentence": "The Supreme Court of India, in Civil Appeal No. 5765 of 2019, heard the appeal filed by M/s. Kiran Constructions Pvt. Ltd. against the State of Maharashtra and others.",
+        "source_chunks": [
+          0
+        ],
+        "key_spans": [
+          "SUPREME COURT OF INDIA",
+          "CIVIL APPEAL NO. 5765 OF 2019",
+          "M/s. Kiran Constructions Pvt. Ltd. ... Appellant(s)",
+          "State of Maharashtra & Ors. ... Respondent(s)"
+        ]
+      },
+      {
+        "sentence": "The appeal arose from a judgment dated 12th September, 2018, by the High Court of Judicature at Bombay, which dismissed the appellant's writ petition challenging the acquisition of land bearing Survey No. 145/2.",
+        "source_chunks": [
+          0
+        ],
+        "key_spans": [
+          "This appeal arises out of the judgment and order dated 12th September, 2018 passed by the High Court of Judicature at Bombay",
+          "dismissed the writ petition filed by the appellant challenging the acquisition of land bearing Survey No. 145/2"
+        ]
+      },
+      {
+        "sentence": "The appellant, a private limited company engaged in construction and real estate development, is the owner of 5 acres and 20 guntas of land situated in Village Khed, Taluka Mulshi, District Pune.",
+        "source_chunks": [
+          0
+        ],
+        "key_spans": [
+          "The appellant is a private limited company engaged in the business of construction and real estate development",
+          "owner of land admeasuring 5 acres and 20 guntas bearing Survey No. 145/2 situated in Village Khed, Taluka Mulshi, District Pune"
+        ]
+      },
+      {
+        "sentence": "The Government of Maharashtra issued a notification under Section 11(1) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013, on 22nd August, 2015, for the acquisition of the subject land for a bypass road.",
+        "source_chunks": [
+          0
+        ],
+        "key_spans": [
+          "On 22nd August, 2015, the Government of Maharashtra issued a notification under Section 11(1) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013",
+          "for the acquisition of the subject land for the purpose of construction of a bypass road"
+        ]
+      },
+      {
+        "sentence": "The appellant filed objections under Section 15 of the Act of 2013, arguing that the acquisition was not for a public purpose, alternative land was available, the Social Impact Assessment (SIA) study was non-compliant, and the compensation was inadequate.",
+        "source_chunks": [
+          0,
+          1
+        ],
+        "key_spans": [
+          "The appellant filed objections under Section 15 of the Act of 2013",
+          "The acquisition was not for a public purpose",
+          "Alternative land was available",
+          "The Social Impact Assessment (SIA) study was not conducted in accordance with the mandatory provisions",
+          "The compensation offered was grossly inadequate"
+        ]
+      }
+    ],
+    "model": "qwen/qwen3.8-27b"
+  },
+  "verification": {
+    "total_sentences": 5,
+    "passed": 4,
+    "warned": 0,
+    "failed": 1,
+    "pass_rate": 0.8,
+    "verified_summary": "This appeal arises out of the judgment and order dated 12th September, 2018 passed by the High Court of Judicature at Bombay in Writ Petition No. 3421 of 2017, whereby the Division Bench of the High Court dismissed the writ petition filed by the appellant challenging the acquisition of land bearing Survey No. 145/2 situated in Village Khed, Taluka Mulshi, District Pune. The appellant is a private limited company engaged in the business of construction and real estate development and is the owner of land admeasuring 5 acres and 20 guntas bearing Survey No. 145/2 situated in Village Khed, Taluka Mulshi, District Pune. On 22nd August, 2015, the Government of Maharashtra issued a notification under Section 11(1) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013, for the acquisition of the subject land for the purpose of construction of a bypass road connecting the Pune-Mumbai Expressway to National Highway 48. The appellant filed objections under Section 15 of the Act of 2013, arguing that the acquisition was not for a public purpose, alternative land was available, the Social Impact Assessment (SIA) study was non-compliant, and the compensation was inadequate.",
+    "details": [
+      {
+        "sentence": "The Supreme Court of India decided Civil Appeal No. 5765 of 2019, in which M/s. Kiran Constructions Pvt. Ltd. was the Appellant and State of Maharashtra & Ors. were the Respondents.",
+        "verdict": "DROPPED",
+        "entailment_score": 0.0176,
+        "nli_label": "NEUTRAL",
+        "span_match_scores": [
+          1.0,
+          1.0,
+          0.8235,
+          0.6835
+        ],
+        "reasons": [
+          "NLI: entailment below threshold (0.018 < 0.7)",
+          "Phantom citation: span 'State of Maharashtra & Ors. ... Respondent(s)…' not found in source (best match ratio=0.684)",
+          "Dropped after 3 regeneration attempts."
+        ],
+        "source_chunks": [
+          0
+        ],
+        "key_spans": [
+          "SUPREME COURT OF INDIA",
+          "CIVIL APPEAL NO. 5765 OF 2019",
+          "M/s. Kiran Constructions Pvt. Ltd. ... Appellant(s)",
+          "State of Maharashtra & Ors. ... Respondent(s)"
+        ],
+        "regen_attempts": 3
+      },
+      {
+        "sentence": "This appeal arises out of the judgment and order dated 12th September, 2018 passed by the High Court of Judicature at Bombay in Writ Petition No. 3421 of 2017, whereby the Division Bench of the High Court dismissed the writ petition filed by the appellant challenging the acquisition of land bearing Survey No. 145/2 situated in Village Khed, Taluka Mulshi, District Pune.",
+        "verdict": "PASS",
+        "entailment_score": 0.9278,
+        "nli_label": "ENTAILMENT",
+        "span_match_scores": [
+          1.0,
+          1.0
+        ],
+        "reasons": [],
+        "source_chunks": [
+          0
+        ],
+        "key_spans": [
+          "This appeal arises out of the judgment and order dated 12th September, 2018 passed by the High Court of Judicature at Bombay in Writ Petition No. 3421 of 2017",
+          "whereby the Division Bench of the High Court dismissed the writ petition filed by the appellant challenging the acquisition of land bearing Survey No. 145/2 situated in Village Khed, Taluka Mulshi, District Pune"
+        ],
+        "regen_attempts": 1
+      },
+      {
+        "sentence": "The appellant is a private limited company engaged in the business of construction and real estate development and is the owner of land admeasuring 5 acres and 20 guntas bearing Survey No. 145/2 situated in Village Khed, Taluka Mulshi, District Pune.",
+        "verdict": "PASS",
+        "entailment_score": 0.9432,
+        "nli_label": "ENTAILMENT",
+        "span_match_scores": [
+          1.0,
+          1.0
+        ],
+        "reasons": [],
+        "source_chunks": [
+          0
+        ],
+        "key_spans": [
+          "The appellant is a private limited company engaged in the business of construction and real estate development.",
+          "The appellant is the owner of land admeasuring 5 acres and 20 guntas bearing Survey No. 145/2 situated in Village Khed, Taluka Mulshi, District Pune"
+        ],
+        "regen_attempts": 1
+      },
+      {
+        "sentence": "On 22nd August, 2015, the Government of Maharashtra issued a notification under Section 11(1) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013, for the acquisition of the subject land for the purpose of construction of a bypass road connecting the Pune-Mumbai Expressway to National Highway 48.",
+        "verdict": "PASS",
+        "entailment_score": 0.9837,
+        "nli_label": "ENTAILMENT",
+        "span_match_scores": [
+          1.0,
+          1.0
+        ],
+        "reasons": [],
+        "source_chunks": [
+          0
+        ],
+        "key_spans": [
+          "On 22nd August, 2015, the Government of Maharashtra issued a notification under Section 11(1) of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013",
+          "for the acquisition of the subject land for the purpose of construction of a bypass road connecting the Pune-Mumbai Expressway to National Highway 48"
+        ],
+        "regen_attempts": 1
+      },
+      {
+        "sentence": "The appellant filed objections under Section 15 of the Act of 2013, arguing that the acquisition was not for a public purpose, alternative land was available, the Social Impact Assessment (SIA) study was non-compliant, and the compensation was inadequate.",
+        "verdict": "PASS",
+        "entailment_score": 0.9961,
+        "nli_label": "ENTAILMENT",
+        "span_match_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "reasons": [],
+        "source_chunks": [
+          0,
+          1
+        ],
+        "key_spans": [
+          "The appellant filed objections under Section 15 of the Act of 2013",
+          "The acquisition was not for a public purpose",
+          "Alternative land was available",
+          "The Social Impact Assessment (SIA) study was not conducted in accordance with the mandatory provisions",
+          "The compensation offered was grossly inadequate"
+        ],
+        "regen_attempts": 0
+      }
+    ]
+  },
+  "evaluation": {
+    "rouge": {
+      "rouge1": {
+        "precision": 0.4229,
+        "recall": 0.5346,
+        "f1": 0.4722
+      },
+      "rouge2": {
+        "precision": 0.165,
+        "recall": 0.2089,
+        "f1": 0.1844
+      },
+      "rougeL": {
+        "precision": 0.2289,
+        "recall": 0.2893,
+        "f1": 0.2556
+      }
+    },
+    "bertscore": {
+      "precision": 0.0519,
+      "recall": 0.1741,
+      "f1": 0.1137
+    },
+    "faithfulness": {
+      "mean_entailment_prob": 0.9627,
+      "pct_entailed": 100.0,
+      "pct_neutral": 0.0,
+      "pct_contradicted": 0.0,
+      "num_sentences": 4,
+      "per_sentence": [
+        {
+          "sentence": "This appeal arises out of the judgment and order dated 12th September, 2018 passed by the High Court",
+          "label": "ENTAILMENT",
+          "entailment_prob": 0.9278
+        },
+        {
+          "sentence": "The appellant is a private limited company engaged in the business of construction and real estate d",
+          "label": "ENTAILMENT",
+          "entailment_prob": 0.9432
+        },
+        {
+          "sentence": "On 22nd August, 2015, the Government of Maharashtra issued a notification under Section 11(1) of the",
+          "label": "ENTAILMENT",
+          "entailment_prob": 0.9837
+        },
+        {
+          "sentence": "The appellant filed objections under Section 15 of the Act of 2013, arguing that the acquisition was",
+          "label": "ENTAILMENT",
+          "entailment_prob": 0.9961
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 132.5
+}
